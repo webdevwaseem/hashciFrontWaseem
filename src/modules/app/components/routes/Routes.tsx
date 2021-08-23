@@ -9,6 +9,9 @@ import Footer from "../footer";
 import Navbar from "../navbar2";
 import Home from "../../../home";
 import { MainContainer } from "../../../../shared/styles/styled";
+import CreateCollection from "../Collection/CreateCollection";
+import SignUp from "../SignUp/SignUp";
+import Login from "../Login/Login";
 
 // import wallet from "../../../../utils/wallet";
 // import { useDispatch } from "react-redux";
@@ -30,6 +33,32 @@ export const routes: RouteDefinition[] = [
     title: "Home",
     pathType: 0,
   },
+  {
+    path: Paths.login,
+    component: Login,
+    protected: false,
+    redirect: Paths.login,
+    title: "Login",
+    pathType: 1,
+  },
+  {
+    path: Paths.signup,
+    component: SignUp,
+    protected: false,
+    redirect: Paths.login,
+    title: "Sign Up",
+    pathType: 2,
+  },
+  {
+    path: Paths.collection,
+    component: CreateCollection,
+    protected: false,
+    redirect: Paths.collection,
+    title: "Create Collection",
+    pathType: 3,
+  },
+
+
   {
     path: Paths.home,
     component: Home,
@@ -108,7 +137,7 @@ const Routes: React.FC<Props & RoutesProps> = () => {
             {routes.map((route, i) => {
               const render = getRouteRenderWithAuth(route, i);
               const rest = { render };
-              return <Route key={i} path={route.path} exact {...rest} />;
+              return <Route key={i} path={route.path} component={route.component} exact {...rest} />;
             })}
           </Switch>
         </MainContainer>
