@@ -1,24 +1,28 @@
 import styled from "styled-components";
 
+export const Parentdiv = styled.div`
+  background-color: #06397e;
+`;
+
 export const Navdiv = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #06397e;
-  padding: 18px 25px;
+  padding: 18px 5%;
 `;
 
 export const NavFirst = styled.div`
   width: 10%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 `;
 
 export const NavSecond = styled.div`
-  width: 60%;
+  width: 50%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 `;
 
@@ -83,14 +87,17 @@ export const NavBelow = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 25px;
+  background-color: #fff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 0 5%;
 `;
 
 export const BelowText = styled.div`
   display: flex;
   color: black;
   font-size: 11px;
+  justify-content: flex-start;
+  align-items: center;
 `;
 
 export const BelowH3 = styled.h3`
@@ -100,7 +107,10 @@ export const BelowH3 = styled.h3`
 
 export const BelowFilter = styled.div`
   color: black;
-  margin-right: 12px;
   font-weight: 500;
   font-size: 13px;
+  display: flex;
+  margin-right: 2%;
+  justify-content: flex-end;
+  align-items: center;
 `;

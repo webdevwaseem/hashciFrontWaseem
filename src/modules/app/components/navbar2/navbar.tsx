@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  Parentdiv,
   Navdiv,
   NavFirst,
   Logoimg,
@@ -19,7 +20,7 @@ import {
 
 function navbar() {
   return (
-    <div>
+    <Parentdiv>
       <Navdiv>
         <NavFirst>
           <Logoimg src="https://i.pinimg.com/originals/f9/11/d3/f911d38579709636499618b6b3d9b6f6.jpg" />
@@ -50,7 +51,7 @@ function navbar() {
         </BelowText>
         <BelowFilter>Filter</BelowFilter>
       </NavBelow>
-    </div>
+    </Parentdiv>
   );
 }
 

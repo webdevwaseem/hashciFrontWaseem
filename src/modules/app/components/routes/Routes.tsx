@@ -7,7 +7,7 @@ import { NotFound } from "./NotFound";
 import { StyledRoutesContainer } from "./style";
 import Footer from "../footer";
 import Navbar from "../navbar2";
-import Home from "../../../home";
+import Home from "../Login/Login";
 import { MainContainer } from "../../../../shared/styles/styled";
 
 // import wallet from "../../../../utils/wallet";

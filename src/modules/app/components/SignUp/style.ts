@@ -1,74 +1,195 @@
 import styled from "styled-components";
 
-export const Container=styled.div`
+export const Container = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+export const Title = styled.h1`
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-size: 30px;
+  font-weight: 700;
+  /* identical to box height, or 36px */
+`;
+export const FormImage = styled.img`
+  width: 100%;
+  height: 65vh;
 
-display :flex ;
-flex-direction: row;
-align-items:center;
-justify-content: space-evenly;
+  background-size: contain;
+`;
+export const SignupFormLeft = styled.div`
+  width: 50%;
+`;
 
+export const SignUpFormRight = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 40%;
+`;
 
-`
-export const Title=styled.h1`
-width: 109px;
-height: 36px;
-left: 0px;
-top: 0px;
-font-family: 'Inter', sans-serif;
-font-style: normal;
-font-weight: bold;
-font-size: 30px;
-line-height: 120%;
-/* identical to box height, or 36px */
+export const Img = styled.img`
+  width: 100%;
+  height: 65vh;
 
-display: flex;
-align-items: center;
-justify-content: flex-start;
-letter-spacing: -0.01em;
+  background-size: contain;
+`;
+export const LoginText = styled.h1`
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-size: 30px;
+  font-weight: 700;
+`;
 
-color: #000000;
+export const LoginFormLeft = styled.div`
+  width: 50%;
+`;
 
-`
-export const FormImage=styled.img `
-width: 527px;
-height: 640px;
-left: calc(50% - 527px/2 - 280.5px);
-top: calc(50% - 693px/2 - 45.5px);
-align-self: center;
-`
+export const LoginFormRight = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 40%;
+`;
 
-export const FormData=styled.div `
+export const Input = styled.input`
+  width: 83%;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 4px;
+  margin: 15px 0;
+  padding: 5px 3%;
+  border: 0.5px solid grey;
+`;
 
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-justify-content: center;
-padding: 0px;
-width: 400px;
-height: 902px;
+export const Label = styled.label`
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  color: #000;
+`;
+export const Checkalign = styled.div`
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+`;
+export const CheckBox = styled.input`
+  padding: 20px;
+`;
+export const ForgotPassLink = styled.a`
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #5e2eba;
+`;
 
+export const RememberLabel = styled.label`
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #06387d;
+`;
+export const Button = styled.button`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 11px 16px;
+  width: 90%;
+  height: 40px;
+  background: #06387d;
+  color: white;
+  border-radius: 4px;
+  font-size: 15px;
+  border: none;
+`;
+export const ExtraLinks = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
 
-`
-export const Input = styled.input `
-width: 380px;
-height:30px;
-left: 0px;
-padding: 0.25em 0.5em;
-background: #eeee;
-border-radius: 4px;
-margin: 15px 0px;
-border: 1px solid var(--input-border);
-`
+  margin: 20px 0;
+`;
+export const NotaMember = styled.a`
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #394a64;
+`;
+export const Icon = styled.image`
+  background: url("/identity/sign-in/g-normal.png") transparent 5px 50%
+    no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  width: 42px;
+  height: 42px;
+`;
+export const Image = styled.img`
+  height: 65%;
+  padding-right: 10px;
+`;
+export const Auth = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+`;
+export const OR = styled.div`
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  margin: 12px 0;
+  color: #000;
+  /* or 18px */
+`;
+export const ButtonAuth = styled.button`
+  display: flex;
+  align-items: center;
+  padding: 4px 10px;
+  font-size: 13px;
+  font-weight: 600;
+  color: blue;
+  justify-content: center;
+  width: 48%;
+  height: 40px;
+  background: #efebeb;
+  border-radius: 4px;
+  border: none;
+`;
 
-export const Label =styled.label`
-//width: 81px;
-height: 16px;
-//left: 0px;
-//top: 0px;
-font-family: 'Inter', sans-serif;
-font-style: normal;
-font-weight: 600;
-font-size: 14px;
-line-height: 130%;
-color: #051226;
-`
+export const AppleButton = styled.button`
+  display: flex;
+  align-items: center;
+  padding: 4px 10px;
+  font-size: 13px;
+  font-weight: 600;
+  color: white;
+  justify-content: center;
+  width: 48%;
+  height: 40px;
+  background: #000;
+  border-radius: 4px;
+  border: none;
+`;
+export const ButtonDiv = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+`;
+
+export const FormData = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0px;
+  width: 400px;
+  height: 902px;
+`;

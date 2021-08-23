@@ -1,231 +1,164 @@
+import styled from "styled-components";
 
+export const Container = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15%;
+  background-color: white;
+`;
 
-import styled from 'styled-components';
+export const Img = styled.img`
+  width: 100%;
+  height: 65vh;
 
-export const Container=styled.div `
-display :flex ;
-flex-direction: row;
-align-items: center;
-justify-content:space-evenly;
+  background-size: contain;
+`;
+export const LoginText = styled.h1`
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-size: 30px;
+  font-weight: 700;
+`;
 
-`
+export const LoginFormLeft = styled.div`
+  width: 50%;
+`;
 
-export const Img=styled.img `
-width: 527px;
-height: 435px;
-border: 1px solid #DEE5EF;
-box-sizing: border-box;
-border-radius: 4px;
-align-self: center;
-`
-export const LoginText=styled.h1`
+export const LoginFormRight = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 40%;
+`;
 
-//width: 235px;
-height: 36px;
-//left: 0px;
-//top: 0px;
-font-family: 'Inter', sans-serif;
-font-style: normal;
-font-weight: bold;
-font-size: 30px;
-line-height: 120%;
-display: flex;
-align-items: center;
-letter-spacing: -0.01em;
-color: #000000;
-`
+export const Input = styled.input`
+  width: 83%;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 4px;
+  margin: 15px 0;
+  padding: 5px 3%;
+  border: 0.5px solid grey;
+`;
 
-export const Formcontainer=styled.div `
+export const Label = styled.label`
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  color: #000;
+`;
+export const Checkalign = styled.div`
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+`;
+export const CheckBox = styled.input`
+  padding: 20px;
+`;
+export const ForgotPassLink = styled.a`
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #5e2eba;
+`;
 
- display: flex;
- flex-direction:column;
- align-items: center;
- justify-content:center;
- width: 500px;
- height: 600px;
-
-` 
-
-export const Input = styled.input `
-width: 380px;
-height:30px;
-left: 0px;
-
-padding: 0.25em 0.5em;
-background: #FFFFFF;
-border-radius: 4px;
-margin: 15px 0px;
-border: 1px solid var(--input-border);
-
-
-`
-export const Text = styled.p`
-
-width: 400px;
-height: 44px;
-//left: 0px;
-//top: 47px;
-padding: 2px;
-font-family: 'Inter', sans-serif;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 105%;
-color: #394A64;
-
-`
-export const Label =styled.label`
-//width: 81px;
-height: 16px;
-//left: 0px;
-//top: 0px;
-font-family: 'Inter', sans-serif;
-font-style: normal;
-font-weight: 600;
-font-size: 14px;
-line-height: 130%;
-color: #051226;
-`
-export const Checkalign= styled.div `
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-margin:8px 0;
-`
-export const CheckBox=styled.input `
-
-left: 16.67%;
-right: 16.67%;
-top: 25%;
-bottom: 29.17%;
-border: 2px solid #FFFFFF;
-
-`
-export const ForgotPassLink=styled.a`
-
-width: 140px;
-height: 25px;
-right: 492px;
-top: 629px;
-font-family: 'Inter', sans-serif;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 140%;
-text-align: right;
-color: #5E2EBA;
-
-
-`
- 
-export const RememberLabel= styled.label  `
-width: 252px;
-height: 20px;
-left: 28px;
-top: 0px;
-font-family: 'Inter', sans-serif;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 140%;
-display: flex;
-align-items: center;
-color: #394A64;
-padding: 5px;
-& span {
-  padding:8px;
-
-}
-`      
+export const RememberLabel = styled.label`
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #06387d;
+`;
 export const Button = styled.button`
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 11px 16px;
-position: static;
-width: 400px;
-height: 40px;
-left: 0px;
-top: 319px;
-background: #5E2EBA;
-border-radius: 4px;
-font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 11px 16px;
+  width: 90%;
+  height: 40px;
+  background: #06387d;
+  color: white;
+  border-radius: 4px;
+  font-size: 15px;
+  border: none;
+`;
+export const ExtraLinks = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
 
-`
-export const ExtraLinks =styled.div `
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-self: flex-end;
-margin: 8px 0;
+  margin: 20px 0;
+`;
+export const NotaMember = styled.a`
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #394a64;
+`;
+export const Icon = styled.image`
+  background: url("/identity/sign-in/g-normal.png") transparent 5px 50%
+    no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  width: 42px;
+  height: 42px;
+`;
+export const Image = styled.img`
+  height: 65%;
+  padding-right: 10px;
+`;
+export const Auth = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+`;
+export const OR = styled.div`
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  margin: 12px 0;
+  color: #000;
+  /* or 18px */
+`;
+export const ButtonAuth = styled.button`
+  display: flex;
+  align-items: center;
+  padding: 4px 10px;
+  font-size: 13px;
+  font-weight: 600;
+  color: blue;
+  justify-content: center;
+  width: 48%;
+  height: 40px;
+  background: #efebeb;
+  border-radius: 4px;
+  border: none;
+`;
 
-`
-export const NotaMember= styled.a `
-width: 250px;
-height: 20px;
-right: 211px;
-top: 629px;
-font-family: 'Inter', sans-serif;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 140%;
-text-align: right;
-color: #394A64;
-padding:5px;
-
-
-
-`       
-export const Icon=styled.image ` 
-      background: url('/identity/sign-in/g-normal.png') transparent 5px 50% no-repeat;
-      display: inline-block;
-      vertical-align: middle;
-      width: 42px;
-      height: 42px;
-    `
-    export const Image=styled.img  `
-      height:100%;
-     font-size: 40px;
-     padding: 15px;
-    
-    `
-   export const Auth=styled.div `
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-   
-   
-   ` 
-export const OR=styled.div  `
-width: 20px;
-height: 18px;
-left: 610px;
-top: 4px;
-font-family: Inter;
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 150%;
-margin: 8px 0;
-/* or 18px */
-
-   
-   `     
-export const ButtonAuth=styled.button` 
-display: flex;
-flex-direction: row;
-align-items:center;
-padding: 7px 10px;
-font-size: larger;
-justify-content: center;
-text-align: center;
-width: 400px;
-height: 40px;
-left: 0px;
-top: 0px;
-background: #F3EDFF;
-border-radius: 4px;   
-`
+export const AppleButton = styled.button`
+  display: flex;
+  align-items: center;
+  padding: 4px 10px;
+  font-size: 13px;
+  font-weight: 600;
+  color: white;
+  justify-content: center;
+  width: 48%;
+  height: 40px;
+  background: #000;
+  border-radius: 4px;
+  border: none;
+`;
+export const ButtonDiv = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+`;

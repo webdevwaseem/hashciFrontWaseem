@@ -1,14 +1,9 @@
 import React from "react";
-import CreateCollection from "../app/components/Collection/CreateCollection";
-import Login from "../app/components/Login/Login";
-import SignUp from "../app/components/SignUp/SignUp";
 import { Galleryimg, Galleryitem, Homebody, Gallery } from "./style";
 
 const Home = (props: any) => {
   return (
-  
-  <Homebody>
-  <CreateCollection />
+    <Homebody>
       <Gallery>
         <Galleryitem>
           <Galleryimg src="https://cdn.pixabay.com/photo/2017/08/30/12/45/girl-2696947_1280.jpg" />
