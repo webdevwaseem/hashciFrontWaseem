@@ -1,4 +1,8 @@
-import { GET_BALANCE,LOGIN ,WALLET_CONNECT_CHECK,SET_CHAINID,WALLET_BALANCE} from "./constants";
+import { GET_BALANCE,LOGIN ,
+LOGIN_CHECK,
+SIGNUP_CHECK,
+CREATE_COLLECTION,
+WALLET_CONNECT_CHECK,SET_CHAINID,WALLET_BALANCE} from "./constants";
 import wallet from "../../utils/wallet";
 
 export const getLPBalance = (amount: any) => {
@@ -41,4 +45,26 @@ export const getBalance = (address: any) => async (dispatch: any) => {
 		dispatch(getWalletBalance(balance));
 		dispatch(getLPBalance(address));
 	}
+};
+
+export const Logincheck = (loginInfo:object) => {
+	return {
+		type: LOGIN_CHECK,
+		payload:loginInfo
+	};
+};
+
+export const signupcheck = (signUpInfo:object) => {
+	console.log("info",signUpInfo)
+	return {
+		type: SIGNUP_CHECK,
+		payload:signUpInfo
+	};
+};
+export const createCollection = (createCollectionData:object) => {
+	console.log("info",createCollectionData)
+	return {
+		type: CREATE_COLLECTION,
+		payload:createCollectionData
+	};
 };
