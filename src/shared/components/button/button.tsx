@@ -27,6 +27,7 @@ const buttonStyles = css`
 
   background:${colors.buttonColor};
   color:${colors.black};
+  
   outline: 0;
   font-size: 12px;
   text-align: center;

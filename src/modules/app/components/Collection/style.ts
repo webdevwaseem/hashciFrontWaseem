@@ -4,7 +4,7 @@ export const Container=styled.div `
 display: flex;
 flex-direction:column;
 align-items:center;
-justify-content:center;
+justify-content:flex-end;
 
 
 `
@@ -14,10 +14,11 @@ export const Button = styled.button`
 align-items: center;
 padding: 11px 16px;
 position: static;
-width: 400px;
-height: 40px;
+width: 200px;
+height: 45px;
 left: 0px;
 top: 319px;
+margin-left: 10px;
 background: #eeee;
 border-radius: 4px;
 font-size: 20px;
@@ -29,7 +30,24 @@ justify-content:center;
 align-items:flex-start;
 
 
+
+`
+export const PrevImageDiv=styled.div `
+position: relative;
+//padding: 20px 40px 40px;
+//max-width: 2640px;
+display: flex;
+flex-direction: row;
+align-items: stretch    ;
+justify-content: end;
+
+img {
+position: static ;
+
+background-color: red;
+}
 `   
+
 export const Title=styled.h1 `
 font-size: 18px;
 padding:2px;
